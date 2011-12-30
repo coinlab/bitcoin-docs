@@ -1,24 +1,3 @@
-<style> 
-h1 {
-color: rgb(99, 36, 35);
-}
-h2 {
-border-bottom: 3px solid rgb(99, 36, 35);
-}
-a, a:visited {
-color: rgb(99, 36, 35);
-}
-p.author {
-font-size: 0.9em;
-font-style: italic;
-}
-em {
-font-weight: bold;
-font-style: italic;
-color: rgb(99, 36, 35);
-}
-</style>
-
 <p class="author">
 by CoinLab.com
 <br/>December 29, 2011
