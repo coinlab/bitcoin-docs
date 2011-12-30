@@ -1,5 +1,5 @@
 <p class="author">
-by CoinLab.com
+by *CoinLab.com*
 <br/>December 29, 2011
 </p>
 
