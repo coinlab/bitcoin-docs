@@ -1,5 +1,5 @@
 <p class="author">
-by *CoinLab.com*
+by <i>CoinLab.com</i>
 <br/>December 29, 2011
 </p>
 
