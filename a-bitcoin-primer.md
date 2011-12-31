@@ -1,6 +1,9 @@
 <p class="author">
-by <i>CoinLab.com</i>
+<em>
+by CoinLab.com
+<br/>Authors: Chris Koss, Mike Koss
 <br/>December 29, 2011
+</em>
 </p>
 
 What if you could store and transfer money safely, securely, cheaply and quickly anywhere in the world yourself, without relying on anyone else? 
