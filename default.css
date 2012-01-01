@@ -1,6 +1,6 @@
 html {
-  font-family: Times;
-  font-size: 18px;
+  font-family: Helvetica;
+  font-size: 14px;
   font-weight: normal;
   color: #000000;
   background-color: transparent;
@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5,h6 {
   font-weight:bold;
   -pdf-outline: true;
   -pdf-outline-open: false;
+  line-height: 100%;
 }
 
 h1 {
@@ -80,54 +81,36 @@ noscript { display: none; }
 
 /* Bitcoin docs specific */
 
-h1 {
-color: rgb(99, 36, 35);
-}
-
-h1, h2 {
-border-bottom: 3px solid rgb(99, 36, 35);
-}
-
-a, a:visited {
-color: rgb(99, 36, 35);
-}
-
-body {
-columns: 2;
-}
-
-p.author {
-font-size: 0.9em;
-font-style: italic;
-}
-
-em {
-font-weight: bold;
-font-style: italic;
-color: rgb(99, 36, 35);
-}
+h1 { color: rgb(99, 36, 35); }
+h1, h2 { border-bottom: 2px solid rgb(99, 36, 35); }
+a, a:visited { color: rgb(99, 36, 35); }
+p.author { font-size: 0.9em; font-style: italic; }
+em { font-weight: bold; font-style: italic; color: rgb(99, 36, 35); }
+#footer { font-size: 90%; font-style: italic; }
+p { text-align: justify; }
 
 @page {
-size: letter;
-  @frame cola {
-    width: 240pt;
-    left: 69pt;
-    top: 54pt;
-    height: 684pt;
+  size: letter;
+  @frame left {
+    margin: 0;
+    left: 1in;
+    top: 1in;
+    width: 3.125in;
+    height: 9.25in;
   }
-  @frame colb {
-    width: 240pt;
-    left: 339pt;
-    top: 54pt;
-    height: 684pt;
+  @frame right {
+    margin: 0;
+    top: 1in;
+    left: 4.375in;
+    width: 3.125in;
+    height: 9.25in;
   }
   @frame footer {
     -pdf-frame-content: footer;
+    margin: 0;
+    left: 1in;
+    top: 10.5in;
+    width: 6.5in;
     height: 0.5in;
-    bottom: 0;
   }
-}
-
-#footer {
-text-align: center;
 }
