@@ -37,7 +37,7 @@ hundreds, of thousands of dollars. Over the next several months, Bitcoin prices
 were extremely volatile, dropping suddenly after each of a half dozen high
 profile incidents. Exchanges were hacked, Bitcoins were lost from carelessness,
 viruses popped up which stole any Bitcoin it could find, and some services
-closed without warning, disappearing with their customers’ money.
+closed without warning, disappearing with their customers' money.
 
 As users learned better and safer practices for handling their Bitcoin, price
 volatility decreased, and the price of a Bitcoin currently hovers around $4.
@@ -66,10 +66,10 @@ practically impossible. Most Bitcoin users maintain a collection of addresses,
 stored in a digital wallet.
 
 When someone wants to send money to another user, they use software which
-creates a transaction containing the receiver’s address and an amount, and
+creates a transaction containing the receiver's address and an amount, and
 cryptographically signs it with their private key. This is published on a
-peer-to-peer network which validates it against the sender’s public key, checks
-that the sending address’s balance is sufficient, and propagates it to all the
+peer-to-peer network which validates it against the sender's public key, checks
+that the sending address's balance is sufficient, and propagates it to all the
 other nodes on the network.
 
 A transaction does not become certified until it is included in a Block in the
@@ -78,7 +78,7 @@ Bitcoin Block Chain.
 Today, there are thousands of computers *mining* on the Bitcoin network. Each
 computer collects transactions broadcast by other nodes and tries to guess a
 number which solves an unpredictable cryptographic problem. A powerful home
-computer can try 100’s of millions of numbers every second. The more computers
+computer can try 100's of millions of numbers every second. The more computers
 that mine, the more the difficult finding a solution becomes; the difficulty is
 self-adjusting so that, on average, a new block is found every 10 minutes. The
 lucky computer that is the first to find each block earns 50 Bitcoins for his
@@ -90,7 +90,7 @@ in the Block Chain is deemed to be valid, and eliminates the possibility that
 Bitcoins can be doubly-spent. Since the only way to re-write history in the
 Block Chain is to use more computing power than is available in the rest of the
 Bitcoin network, it is generally deemed too costly for any single party to cheat
-(the raw computing power of the Bitcoin network is 10 times that of the world’s
+(the raw computing power of the Bitcoin network is 10 times that of the world's
 largest supercomputing center).
 
 The Block Chain allows every Bitcoin client to examine the complete historical
@@ -103,7 +103,7 @@ supply). While that is true in the short-term, the rate of issuing coins is
 scheduled to be cut in half every four years. So, while 2.6M Bitcoins are
 created each year (until January 2013), there will never be more that [21M total
 Bitcoins created][BitcoinGraph]. And since Bitcoins are almost infinitely
-divisible (up to 8 decimal places), there is no fear that we won’t have enough
+divisible (up to 8 decimal places), there is no fear that we won't have enough
 Bitcoins to deal with an ever expanding economic base of Bitcoin-denominated
 transactions.
 
@@ -114,7 +114,7 @@ transactions.
 The Bitcoin system is unique because it is the first digital store of value
 which can be safely and securely saved and transacted by individuals, without
 have to rely on a trusted third party. Once acquired and properly secured,
-Bitcoins can’t be taken from their owner, by a thief, a bank, or a government.
+Bitcoins can't be taken from their owner, by a thief, a bank, or a government.
 Neither can any entity freeze any account, or prevent the owner from performing
 (essentially free) transactions on the Bitcoin network.
 
@@ -154,34 +154,34 @@ receiving money; e.g., people who take donations.
 
 In December 2011, [Regretsy][Regretsy Cats], a humorous snarky craft blog,
 raised donations to buy Christmas presents for children in families undergoing
-financial hardship. After raising thousands of dollars, Regretsy’s PayPal
+financial hardship. After raising thousands of dollars, Regretsy's PayPal
 account was frozen.
 
-When Regretsy’s writer, Helen Killer, contacted PayPal support, she was told
-that her account was frozen because PayPal’s “Donate” button can only be used by
+When Regretsy's writer, Helen Killer, contacted PayPal support, she was told
+that her account was frozen because PayPal's "Donate" button can only be used by
 non-profit organizations. PayPal later admitted this is false: any company can
-use a “Donate” button. PayPal support told her “it’s not a worthy cause, it’s
-charity,” that she would need to make a new website if she wanted to keep
-raising money, and that gifts couldn’t be shipped to a different address from
+use a "Donate" button. PayPal support told her "it's not a worthy cause, it's
+charity," that she would need to make a new website if she wanted to keep
+raising money, and that gifts couldn't be shipped to a different address from
 the customer who paid for them (which was odd during the holiday gift-giving
 season).
 
 By publicizing her frustrating experience with support on her blog, she
 eventually got an apology from PayPal, and they unfroze her account. But there
 are many similar stories from other PayPal users who have accounts closed or
-funds frozen. Without an audience to create public outcry, many still haven’t
+funds frozen. Without an audience to create public outcry, many still haven't
 had their situations remedied.
 
 [Alex King][King] is an open source software developer who stopped accepting
 donations when some of them started costing him money. In 2009, after an
-anonymous user donated $1 ($0.67 after PayPal’s fees), they charged back their
+anonymous user donated $1 ($0.67 after PayPal's fees), they charged back their
 donation. PayPal then passed a $10 chargeback fee onto King, without any prior
-warning. He says, “I was never able to issue a refund to avoid this charge – the
-refund link was unavailable as the payment was listed as in dispute.”
+warning. He says, "I was never able to issue a refund to avoid this charge - the
+refund link was unavailable as the payment was listed as in dispute."
 
 PayPal exposes sellers to the risks of frozen accounts and chargeback fees. The
 benefit of PayPal, giving customers the ability to get their money back if they
-don’t receive what they paid for, does not apply in the donation scenario.
+don't receive what they paid for, does not apply in the donation scenario.
 Bitcoin transactions are irreversible and can be accepted without a middle man.
 As a result, Bitcoin donations can be accepted without worrying about these
 risks.
@@ -193,7 +193,7 @@ accounts and chargebacks), the known per-transaction costs of these services can
 significantly cut into the profits of some businesses.
 [PayPal](https://cms.paypal.com/cgi-bin/marketingweb?cmd=_render-content&content_ID=merchant/merchant_fees),
 [Google Checkout](https://checkout.google.com/seller/fees.html) and [Amazon
-Checkout’s](https://payments.amazon.com/sdui/sdui/business/cba#pricing) rates
+Checkout's](https://payments.amazon.com/sdui/sdui/business/cba#pricing) rates
 all start at 2.9% + $0.30 per transaction, decreasing to 1.9% for merchants with
 over $30,000 of transactions per month. Viable businesses with low profit
 margins or requiring many small transactions may not be profitable due to these
@@ -201,16 +201,16 @@ fees.
 
 Bitcoin transaction fees are voluntary and payments can be accepted directly by
 merchants. Assuming a gross profit margin of 20%, eliminating processing fees
-would increase a merchant’s profit by 10%, as these expenses would come directly
+would increase a merchant's profit by 10%, as these expenses would come directly
 off the bottom line.
 
 ### A World-Wide System
 
 Unlike current payment processing systems, Bitcoins are inherently world-wide
 and multi-national. There are no artificial barriers for making payments across
-national boundaries; in fact, it’s impossible to verify a transaction’s country
+national boundaries; in fact, it's impossible to verify a transaction's country
 of origin. A merchant accepting Bitcoins immediately has access to a world-wide
-market, without any risk of non-payment from those outside his own country’s
+market, without any risk of non-payment from those outside his own country's
 legal enforcement system.
 
 ### An Inflation Hedge for Long-term Savings
@@ -222,7 +222,7 @@ inflation. If they can transfer their earnings to Bitcoins, they can be isolated
 from the rapid inflation of their native currency, and only convert back when
 needed to purchase goods or services using their native currency.
 
-While this strategy is premature due to Bitcoin’s very volatile valuation today,
+While this strategy is premature due to Bitcoin's very volatile valuation today,
 it may become common as Bitcoin becomes more widely adopted and develops a
 history of value stability.
 
@@ -260,7 +260,7 @@ oversight, exposes Bitcoin prices to market manipulation.
 
 There is already significant speculation in online forums about who may be
 manipulating prices and to what end. When Bitcoin speculators talk about
-surprising market movements, they discuss “The Manipulator,” a shadowy
+surprising market movements, they discuss "The Manipulator," a shadowy
 individual or group who is manipulating the price of Bitcoin with their great
 wealth. Whether they have actually recognized a wealthy market manipulator or
 are anthropomorphizing the Invisible Hand of the market remains unclear.
@@ -268,7 +268,7 @@ are anthropomorphizing the Invisible Hand of the market remains unclear.
 ### Anti-Inflationary
 
 Noted economist Paul Krugman wrote an [article in the New York Times][Krugman]
-criticizing Bitcoin’s anti-inflationary provision (due to the 21M Bitcoin
+criticizing Bitcoin's anti-inflationary provision (due to the 21M Bitcoin
 creation limit). His argument is that Bitcoins will cause people to hoard the
 currency rather than spend it. But we feel his argument ignores the near
 infinite divisibility of the currency. If Bitcoin values go up, people will
@@ -277,7 +277,7 @@ of what they own. While fiat currencies are artificially inflated by expanding
 government debts, Bitcoin will remain relatively stable in value over time.
 
 As a creditor, I would be happy to loan Bitcoins as I can be assured that they
-won’t be artificially inflated before they are returned to me (with interest).
+won't be artificially inflated before they are returned to me (with interest).
 
 Contrary to his argument, we also have examples where deflationary prices in
 some markets (consumer electronics and computers) would seem to predict
@@ -293,11 +293,11 @@ computation-intensive cryptographic hashing. Anyone wanting to maliciously
 re-write the history of the Block Chain must have available greater
 computational power than the entire remainder of the Bitcoin network.
 
-Creating this “alternate history” does not allow transactions to be created
+Creating this "alternate history" does not allow transactions to be created
 without a private key, but it has the ability to erase transactions in the past.
 Theoretically, a scammer could buy a product with Bitcoin, and once they receive
 it, release an alternate block chain, of greater length than the current one,
-that does not contain the scammer’s transaction. Because this new block chain is
+that does not contain the scammer's transaction. Because this new block chain is
 longer, and thus demonstrates greater past computation, the network will accept
 it as the current, most-up-to date block chain. This allows the scammer to spend
 Bitcoin to receive a good, then reverse his transaction to keep both the good
@@ -306,8 +306,8 @@ and the Bitcoin (i.e., double-spending).
 A computational attack would be very difficult to carry out today. The total
 computational power of the Bitcoin network is the equivalent of [over 100
 PetaFLOPs][BitcoinWatch] (the number of computations it can perform per second).
-By comparison, this is about 10 times the speed of the world’s greatest
-supercomputer, [Japan’s K computer][K Computer], at 10.51 PetaFLOPs. The expense
+By comparison, this is about 10 times the speed of the world's greatest
+supercomputer, [Japan's K computer][K Computer], at 10.51 PetaFLOPs. The expense
 of creating a large supercomputer outweighs any potential gains that could come
 from the ability to double spend a portion of Bitcoins.
 
@@ -337,7 +337,7 @@ Bitcoin.
 
 In the above respects, Bitcoin has very similar characteristics to governmental
 paper currency, like US dollar bills (i.e., cash). They can both be transacted
-nearly anonymously without an easily auditable paper trail. However, Bitcoin’s
+nearly anonymously without an easily auditable paper trail. However, Bitcoin's
 technological complexity may cause regulators to view it as a threat to the rule
 of law. The regulatory classification and legality of direct party-to-party
 business transactions are still uncertain.
@@ -347,14 +347,14 @@ business transactions are still uncertain.
 Users of Bitcoin today have to ensure that they secure their digital wallets
 from both loss and theft. This can be challenging, requiring use of using secure
 encryption, password management, and information backup methods. There have been
-some high-profile cases where people made mistakes and lost hundreds of dollars’
+some high-profile cases where people made mistakes and lost hundreds of dollars'
 worth of Bitcoin. With no central authority to appeal to, these funds are truly
 unrecoverable.
 
 It is important for Bitcoin adopters to employ best practices and use methods
 commensurate with the potential for loss of their Bitcoin holdings.
 
-### Is Bitcoin “The One”?
+### Is Bitcoin "The One"?
 
 The Bitcoin system is very young, barely 3 years old. While it has an engaged
 community of early adopters, many of whom have done a deep technical analysis of
@@ -410,5 +410,5 @@ transactions and exchanges in the online world.
   [Bitcoin Stats]: http://blockchain.info/stats "Bitcoin Stats"
   [Krugman]: http://krugman.blogs.nytimes.com/2011/09/07/golden-cyberfetters/ "Golden Cyberfetters"
   [BitcoinWatch]: http://www.bitcoinwatch.com/ "Network Hashrate"
-  [K Computer]: http://www.top500.org/lists/2011/11/press-release "Japan’s K Computer Tops 10 Petaflop/s to Stay Atop TOP500 List"
+  [K Computer]: http://www.top500.org/lists/2011/11/press-release "Japan's K Computer Tops 10 Petaflop/s to Stay Atop TOP500 List"
   [Bitcoin Difficulty]: http://btcserv.net/bitcoin/history/ "Bitcoin History"
