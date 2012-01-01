@@ -81,15 +81,77 @@ noscript { display: none; }
 
 /* Bitcoin docs specific */
 
-h1 { color: rgb(99, 36, 35); }
-h1, h2 { border-bottom: 2px solid rgb(99, 36, 35); }
+h1 {
+  color: rgb(99, 36, 35);
+  margin-bottom: 0;
+}
+h1, h2 {
+  border-bottom: 2px solid rgb(99, 36, 35);
+}
 a, a:visited { color: rgb(99, 36, 35); }
-p.author { font-size: 0.9em; font-style: italic; }
+p.author {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  font-style: italic;
+  -pdf-frame-break: after;
+}
 em { font-weight: bold; font-style: italic; color: rgb(99, 36, 35); }
 #footer { font-size: 90%; font-style: italic; }
 p { text-align: justify; }
 
 @page {
+  size: letter;
+  @frame top {
+    margin: 0;
+    left: 1in;
+    top: 1in;
+    width: 6.5in;
+    height: 1in;
+  }
+  @frame left {
+    margin: 0;
+    left: 1in;
+    top: 2in;
+    width: 3.125in;
+    height: 8.25in;
+  }
+  @frame right {
+    margin: 0;
+    left: 4.375in;
+    top: 2in;
+    width: 3.125in;
+    height: 8.25in;
+  }
+  @frame footer {
+    -pdf-frame-content: footer;
+    margin: 0;
+    left: 1in;
+    top: 10.5in;
+    width: 6.5in;
+    height: 0.5in;
+  }
+}
+
+@page one-column {
+  size: letter;
+  @frame body {
+    margin: 0;
+    left: 1in;
+    top: 1in;
+    width: 6.5in;
+    height: 9.25in;
+  }
+  @frame footer {
+    -pdf-frame-content: footer;
+    margin: 0;
+    left: 1in;
+    top: 10.5in;
+    width: 6.5in;
+    height: 0.5in;
+  }
+}
+
+@page two-column {
   size: letter;
   @frame left {
     margin: 0;
@@ -100,8 +162,8 @@ p { text-align: justify; }
   }
   @frame right {
     margin: 0;
-    top: 1in;
     left: 4.375in;
+    top: 1in;
     width: 3.125in;
     height: 9.25in;
   }

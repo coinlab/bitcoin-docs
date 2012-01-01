@@ -1,20 +1,21 @@
 # A Bitcoin Primer
 
-<p class="author">
-<i>
-by CoinLab.com
-<br/>Authors: Chris Koss, Mike Koss
-<br/>December 29, 2011
-</i>
-</p>
-
 <div id="footer">
 <table><tr>
     <td>A Bitcoin Primer</td>
     <td style="text-align: center;">- <pdf:pagenumber/> -</td>
-    <td style="text-align: right;">12-31-2011</td>
+    <td style="text-align: right;">Jan-01-2012</td>
 </tr></table>
 </div>
+
+<p class="author">
+<i>
+by CoinLab.com
+<br/>Authors: Chris Koss, Mike Koss
+<br/>January 1, 2012
+</i>
+<pdf:nexttemplate name="two-column"/>
+</p>
 
 What if you could store and transfer money safely, securely, cheaply and quickly
 anywhere in the world yourself, without relying on anyone else?
@@ -212,6 +213,8 @@ merchants. Assuming a gross profit margin of 20%, eliminating processing fees
 would increase a merchant's profit by 10%, as these expenses would come directly
 off the bottom line.
 
+<!-- Hack - Widow control not working -->
+<pdf:nextframe>
 ### A World-Wide System
 
 Unlike current payment processing systems, Bitcoins are inherently world-wide
@@ -391,6 +394,9 @@ transactions and exchanges in the online world.
    money transfer system across national boundaries. Agents could accept cash in a
    developed country, and transfer Bitcoins to an agent in the home country of a
    foreign worker, to be picked up by the family of the worker.
+
+<pdf:nexttemplate name="one-column">
+<pdf:nextpage/>
 
 ## References and Links
 
