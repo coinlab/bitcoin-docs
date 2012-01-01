@@ -12,6 +12,10 @@ Documents are written in [Markdown] format and designed to be easy to edit and r
 direction contains generated HTML and PDF version as well. We use the [XHTML2PDF] converter for
 generating PDF documents.
 
+For example, to generate HTML and PDF versions type:
+
+    bin/make-pdf a-bitcoin-primer
+
   [Markdown]: http://daringfireball.net/projects/markdown/ "Markdown"
   [XHTML2PDF]: https://github.com/chrisglass/xhtml2pdf "HTML/CSS to PDF converter - Python"
 
