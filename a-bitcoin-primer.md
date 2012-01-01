@@ -1,9 +1,11 @@
+# A Bitcoin Primer
+
 <p class="author">
-<em>
+<i>
 by CoinLab.com
 <br/>Authors: Chris Koss, Mike Koss
 <br/>December 29, 2011
-</em>
+</i>
 </p>
 
 What if you could store and transfer money safely, securely, cheaply and quickly
@@ -18,11 +20,11 @@ economy).
 The term *Bitcoin* refers to both the digital unit of stored value and the
 peer-to-peer network of computers transmitting and validating transactions of
 these units. The project was publicly [launched in January 2009][Nakamoto], by a
-mysterious inventor using the pseudonym “Satoshi Nakamoto,” whose identity is
+mysterious inventor using the pseudonym "Satoshi Nakamoto," whose identity is
 still a mystery. For the first couple of years, it was mostly just a novelty for
 computer geeks, hackers, and idealistic anarchists.
 
-In April 2011, Forbes Magazine’s Andy Greenberg wrote an [article][Greenberg]
+In April 2011, Forbes Magazine's Andy Greenberg wrote an [article][Greenberg]
 describing the qualities of Bitcoin: it cannot be forged or double-spent,
 controlled or inflated by any government, it is not impeded by international
 boundaries, has a geek-friendly economy of $30,000 per day, and some digital
