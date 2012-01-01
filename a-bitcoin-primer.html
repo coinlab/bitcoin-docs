@@ -1,0 +1,432 @@
+<html>
+<head>
+<style>
+h1 {
+color: rgb(99, 36, 35);
+}
+h2 {
+border-bottom: 3px solid rgb(99, 36, 35);
+}
+a, a:visited {
+color: rgb(99, 36, 35);
+}
+body {
+-webkit-column-count: 2;
+}
+p.author {
+font-size: 0.9em;
+font-style: italic;
+}
+em {
+font-weight: bold;
+font-style: italic;
+color: rgb(99, 36, 35);
+}
+</style>
+</head>
+<body>
+<h1>A Bitcoin Primer</h1>
+
+<p class="author">
+<i>
+by CoinLab.com
+<br/>Authors: Chris Koss, Mike Koss
+<br/>December 29, 2011
+</i>
+</p>
+
+<p>What if you could store and transfer money safely, securely, cheaply and quickly
+anywhere in the world yourself, without relying on anyone else?</p>
+
+<p>Bitcoin is a new technology that has the potential of supplanting many of our
+contemporary banking and money transfer services (at least in the online
+economy).</p>
+
+<h2>What is Bitcoin?</h2>
+
+<p>The term <em>Bitcoin</em> refers to both the digital unit of stored value and the
+peer-to-peer network of computers transmitting and validating transactions of
+these units. The project was publicly <a href="http://bitcoin.org/bitcoin.pdf" title="Bitcoin: A Peer-to-Peer Electronic Cash System">launched in January 2009</a>, by a
+mysterious inventor using the pseudonym "Satoshi Nakamoto," whose identity is
+still a mystery. For the first couple of years, it was mostly just a novelty for
+computer geeks, hackers, and idealistic anarchists.</p>
+
+<p>In April 2011, Forbes Magazine's Andy Greenberg wrote an <a href="http://www.forbes.com/forbes/2011/0509/technology-psilocybin-bitcoins-gavin-andresen-crypto-currency.html" title="Crypto Currency">article</a>
+describing the qualities of Bitcoin: it cannot be forged or double-spent,
+controlled or inflated by any government, it is not impeded by international
+boundaries, has a geek-friendly economy of $30,000 per day, and some digital
+drug-dealers have started accepting it.</p>
+
+<p>The price of a Bitcoin surged from less than a dollar to over $30 as a new
+demographic became interested: speculators. Geeks who had casually collected
+Bitcoin as a curiosity in 2009 found themselves sitting on tens, or even
+hundreds, of thousands of dollars. Over the next several months, Bitcoin prices
+were extremely volatile, dropping suddenly after each of a half dozen high
+profile incidents. Exchanges were hacked, Bitcoins were lost from carelessness,
+viruses popped up which stole any Bitcoin it could find, and some services
+closed without warning, disappearing with their customers' money.</p>
+
+<p>As users learned better and safer practices for handling their Bitcoin, price
+volatility decreased, and the price of a Bitcoin currently hovers around $4.
+Many new services popped up including margin trading and short selling, digital
+downloads, banking and escrow services, a World-of-Warcraft-style MMORPG where
+you can gamble on everything with Bitcoin, web hosting, domain name
+registration, web design, and currency exchanges.</p>
+
+<h2>How does Bitcoin work?</h2>
+
+<p>A Bitcoin <em>address</em> is like a bank account, into which a user can receive,
+store, and send Bitcoins. Instead of being physically secured in a vault,
+Bitcoins are secured with public-key cryptography. Each address consists of a
+public key, which is published, and a private key, which you must keep secret.
+Anyone can send Bitcoin to any public key, but only the person with the private
+key can spend it. While addresses are public, nobody knows which addresses
+belong to which people; Bitcoin addresses are pseudonymous.</p>
+
+<p>The Bitcoin protocol uses <a href="http://blog.ezyang.com/2011/06/the-cryptography-of-bitcoin/" title="The Cryptography of Bitcoin">the strongest algorithms</a> used by the NSA for
+encrypting Secret level documents. These are among the most secure published
+cryptography algorithms available to civilians. Anyone can generate as many
+addresses as they want for free. There are approximately as many possible
+Bitcoin addresses as there are atoms in the earth, so someone generating an
+address already in use (and thus having access to the funds inside) is
+practically impossible. Most Bitcoin users maintain a collection of addresses,
+stored in a digital wallet.</p>
+
+<p>When someone wants to send money to another user, they use software which
+creates a transaction containing the receiver's address and an amount, and
+cryptographically signs it with their private key. This is published on a
+peer-to-peer network which validates it against the sender's public key, checks
+that the sending address's balance is sufficient, and propagates it to all the
+other nodes on the network.</p>
+
+<p>A transaction does not become certified until it is included in a Block in the
+Bitcoin Block Chain.</p>
+
+<p>Today, there are thousands of computers <em>mining</em> on the Bitcoin network. Each
+computer collects transactions broadcast by other nodes and tries to guess a
+number which solves an unpredictable cryptographic problem. A powerful home
+computer can try 100's of millions of numbers every second. The more computers
+that mine, the more the difficult finding a solution becomes; the difficulty is
+self-adjusting so that, on average, a new block is found every 10 minutes. The
+lucky computer that is the first to find each block earns 50 Bitcoins for his
+owner.</p>
+
+<p>As each Block is found, it is added to an ever-growing <em>Block Chain</em> (now
+standing at over <a href="http://btcserv.net/bitcoin/history/" title="Bitcoin History">150,000 Blocks</a>). Any transaction listed
+in the Block Chain is deemed to be valid, and eliminates the possibility that
+Bitcoins can be doubly-spent. Since the only way to re-write history in the
+Block Chain is to use more computing power than is available in the rest of the
+Bitcoin network, it is generally deemed too costly for any single party to cheat
+(the raw computing power of the Bitcoin network is 10 times that of the world's
+largest supercomputing center).</p>
+
+<p>The Block Chain allows every Bitcoin client to examine the complete historical
+transaction record to determine the current account balance of every public
+address in the system.</p>
+
+<p>Since newly created Bitcoins are constantly issued to miners, one would think
+that the currency is inherently inflationary (with an ever expanding money
+supply). While that is true in the short-term, the rate of issuing coins is
+scheduled to be cut in half every four years. So, while 2.6M Bitcoins are
+created each year (until January 2013), there will never be more that <a href="https://en.bitcoin.it/wiki/File:Total_bitcoins_over_time_graph.png" title="Total Bitcoins over Time">21M total
+Bitcoins created</a>. And since Bitcoins are almost infinitely
+divisible (up to 8 decimal places), there is no fear that we won't have enough
+Bitcoins to deal with an ever expanding economic base of Bitcoin-denominated
+transactions.</p>
+
+<h2>What are the benefits of Bitcoin?</h2>
+
+<h3>Financial Self-Determinism and Control</h3>
+
+<p>The Bitcoin system is unique because it is the first digital store of value
+which can be safely and securely saved and transacted by individuals, without
+have to rely on a trusted third party. Once acquired and properly secured,
+Bitcoins can't be taken from their owner, by a thief, a bank, or a government.
+Neither can any entity freeze any account, or prevent the owner from performing
+(essentially free) transactions on the Bitcoin network.</p>
+
+<h3>Irrevocable Transactions</h3>
+
+<p>Chargebacks are a big problem for many merchants. Virtually all current payment
+systems (credit card, inter-bank transfer, PayPal, etc.) allow the consumer to
+refute a transaction, and have their funds returned to them. Merchants have to
+follow an expensive dispute process to receive their money and sometimes pay
+fees of $10-$50 per chargeback. Merchants can be charged additional penalties
+<a href="http://www.internetretailer.com/2003/09/04/visa-to-lower-fee-inducing-chargeback-ratio-to-1-of-transaction" title="Visa to lower fee-inducing chargeback ratio to 1% of transactions">up to $25,000</a> if they have an unusually high rate of
+chargebacks.</p>
+
+<p>Online merchants have chosen to live with a certain amount of fraudulent
+chargebacks while expending company resources on various anti-fraud detection
+measures. In an effort to minimize chargebacks, merchants typically ask their
+customers to reveal personal information about them beyond what is necessary to
+deliver their product or service, leading to a loss of personal privacy for the
+consumer.</p>
+
+<p>Bitcoin transactions reverse the role of trust by being inherently irrevocable.
+Once certified in the Block Chain, a transaction cannot be (practically)
+reversed. It is incumbent on the consumer to trust each merchant they are
+ordering from. Since there are many ways to establish the credibility of a
+merchant (online ratings, word-of-mouth reputation), the Bitcoin trust system is
+a much better match for Internet commerce (verifying the trustworthiness of
+merchants is much easier than verifying the trustworthiness of all consumers).</p>
+
+<p>Because Bitcoin payments cannot be reversed (without the consent of the
+merchant), merchants can offer their products to a wider audience and require
+less personal information from their customers.</p>
+
+<h3>No Need for Middlemen</h3>
+
+<p>The policies of payment processors are sometimes not well aligned with those
+receiving money; e.g., people who take donations.</p>
+
+<p>In December 2011, <a href="http://www.regretsy.com/2011/12/05/cats-1-kids-0/" title="Cats 1, Kids 0">Regretsy</a>, a humorous snarky craft blog,
+raised donations to buy Christmas presents for children in families undergoing
+financial hardship. After raising thousands of dollars, Regretsy's PayPal
+account was frozen.</p>
+
+<p>When Regretsy's writer, Helen Killer, contacted PayPal support, she was told
+that her account was frozen because PayPal's "Donate" button can only be used by
+non-profit organizations. PayPal later admitted this is false: any company can
+use a "Donate" button. PayPal support told her "it's not a worthy cause, it's
+charity," that she would need to make a new website if she wanted to keep
+raising money, and that gifts couldn't be shipped to a different address from
+the customer who paid for them (which was odd during the holiday gift-giving
+season).</p>
+
+<p>By publicizing her frustrating experience with support on her blog, she
+eventually got an apology from PayPal, and they unfroze her account. But there
+are many similar stories from other PayPal users who have accounts closed or
+funds frozen. Without an audience to create public outcry, many still haven't
+had their situations remedied.</p>
+
+<p><a href="http://alexking.org/blog/2009/03/23/beware-of-paypal-donation-chargebacks" title="Beware of PayPal Donation Chargebacks">Alex King</a> is an open source software developer who stopped accepting
+donations when some of them started costing him money. In 2009, after an
+anonymous user donated $1 ($0.67 after PayPal's fees), they charged back their
+donation. PayPal then passed a $10 chargeback fee onto King, without any prior
+warning. He says, "I was never able to issue a refund to avoid this charge - the
+refund link was unavailable as the payment was listed as in dispute."</p>
+
+<p>PayPal exposes sellers to the risks of frozen accounts and chargeback fees. The
+benefit of PayPal, giving customers the ability to get their money back if they
+don't receive what they paid for, does not apply in the donation scenario.
+Bitcoin transactions are irreversible and can be accepted without a middle man.
+As a result, Bitcoin donations can be accepted without worrying about these
+risks.</p>
+
+<h3>Low Cost Transactions</h3>
+
+<p>In addition to the unanticipated risks of using payment processors (e.g., frozen
+accounts and chargebacks), the known per-transaction costs of these services can
+significantly cut into the profits of some businesses.
+<a href="https://cms.paypal.com/cgi-bin/marketingweb?cmd=_render-content&amp;content_ID=merchant/merchant_fees">PayPal</a>,
+<a href="https://checkout.google.com/seller/fees.html">Google Checkout</a> and <a href="https://payments.amazon.com/sdui/sdui/business/cba#pricing">Amazon
+Checkout's</a> rates
+all start at 2.9% + $0.30 per transaction, decreasing to 1.9% for merchants with
+over $30,000 of transactions per month. Viable businesses with low profit
+margins or requiring many small transactions may not be profitable due to these
+fees.</p>
+
+<p>Bitcoin transaction fees are voluntary and payments can be accepted directly by
+merchants. Assuming a gross profit margin of 20%, eliminating processing fees
+would increase a merchant's profit by 10%, as these expenses would come directly
+off the bottom line.</p>
+
+<h3>A World-Wide System</h3>
+
+<p>Unlike current payment processing systems, Bitcoins are inherently world-wide
+and multi-national. There are no artificial barriers for making payments across
+national boundaries; in fact, it's impossible to verify a transaction's country
+of origin. A merchant accepting Bitcoins immediately has access to a world-wide
+market, without any risk of non-payment from those outside his own country's
+legal enforcement system.</p>
+
+<h3>An Inflation Hedge for Long-term Savings</h3>
+
+<p>Because the lifetime creation limited is 21M Bitcoins, it may be that they will
+be a good way to store long-term value as a hedge against inflation. This may be
+especially true for citizens of countries that are experiencing run-away
+inflation. If they can transfer their earnings to Bitcoins, they can be isolated
+from the rapid inflation of their native currency, and only convert back when
+needed to purchase goods or services using their native currency.</p>
+
+<p>While this strategy is premature due to Bitcoin's very volatile valuation today,
+it may become common as Bitcoin becomes more widely adopted and develops a
+history of value stability.</p>
+
+<h2>What are the Inherent Risks of Bitcoins?</h2>
+
+<h3>Irrevocable Transactions</h3>
+
+<p>Merchants do not have to trust their customers to verify payments, but customers
+have to now trust merchants to deliver the goods or services they have paid for.
+There are methods to alleviate this problem; for example, use of third-party
+trusted escrow services which require merchants to post a performance bond and
+enter into binding arbitration of disputes.</p>
+
+<h3>Underlying Value and Volatility in Prices</h3>
+
+<p>What is a Bitcoin worth? The underlying value is a function of the demand of the
+currency by consumers, and their ability to use it to exchange it for other
+goods and services. Just as fiat currencies no longer are tied to the value of
+an underlying commodity, like gold, Bitcoins are only valuable in as much as
+people want them and use them.</p>
+
+<p>Numerous public exchanges exist for people to buy and sell Bitcoin in exchange
+for dollars or other currencies. This helps establish an underlying comparative
+value and allows merchants to cash out of their Bitcoin holdings on a regular
+(e.g., daily) basis, minimizing their exposure to any currency volatility of
+Bitcoins. While Bitcoins have fluctuated in value between $1 and $30 in 2011
+alone, there are mechanisms for merchants to quote prices in dollar-equivalents
+(or other currency), and to exchange the Bitcoins they receive for other
+currencies immediately upon receipt.</p>
+
+<p>An additional concern with the price volatility of Bitcoin is that the total
+value of all Bitcoins mined so far is just over <a href="http://blockchain.info/stats" title="Bitcoin Stats">$30 million</a>.
+This relatively small market cap, in conjunction with a lack of regulatory
+oversight, exposes Bitcoin prices to market manipulation.</p>
+
+<p>There is already significant speculation in online forums about who may be
+manipulating prices and to what end. When Bitcoin speculators talk about
+surprising market movements, they discuss "The Manipulator," a shadowy
+individual or group who is manipulating the price of Bitcoin with their great
+wealth. Whether they have actually recognized a wealthy market manipulator or
+are anthropomorphizing the Invisible Hand of the market remains unclear.</p>
+
+<h3>Anti-Inflationary</h3>
+
+<p>Noted economist Paul Krugman wrote an <a href="http://krugman.blogs.nytimes.com/2011/09/07/golden-cyberfetters/" title="Golden Cyberfetters">article in the New York Times</a>
+criticizing Bitcoin's anti-inflationary provision (due to the 21M Bitcoin
+creation limit). His argument is that Bitcoins will cause people to hoard the
+currency rather than spend it. But we feel his argument ignores the near
+infinite divisibility of the currency. If Bitcoin values go up, people will
+still desire to spend some of their gains from the currency by using a fraction
+of what they own. While fiat currencies are artificially inflated by expanding
+government debts, Bitcoin will remain relatively stable in value over time.</p>
+
+<p>As a creditor, I would be happy to loan Bitcoins as I can be assured that they
+won't be artificially inflated before they are returned to me (with interest).</p>
+
+<p>Contrary to his argument, we also have examples where deflationary prices in
+some markets (consumer electronics and computers) would seem to predict
+consumers refraining from purchases (why spend $2,000 on a computer today when I
+can wait 2 years and get the same computer for $500). Rather, we see a healthy
+market providing ever-increasing value to consumers.</p>
+
+<h3>Computational Attack</h3>
+
+<p>The Bitcoin network recognizes the longest Block Chain as the current valid
+ledger of all transactions. Block chains can only be extended with
+computation-intensive cryptographic hashing. Anyone wanting to maliciously
+re-write the history of the Block Chain must have available greater
+computational power than the entire remainder of the Bitcoin network.</p>
+
+<p>Creating this "alternate history" does not allow transactions to be created
+without a private key, but it has the ability to erase transactions in the past.
+Theoretically, a scammer could buy a product with Bitcoin, and once they receive
+it, release an alternate block chain, of greater length than the current one,
+that does not contain the scammer's transaction. Because this new block chain is
+longer, and thus demonstrates greater past computation, the network will accept
+it as the current, most-up-to date block chain. This allows the scammer to spend
+Bitcoin to receive a good, then reverse his transaction to keep both the good
+and the Bitcoin (i.e., double-spending).</p>
+
+<p>A computational attack would be very difficult to carry out today. The total
+computational power of the Bitcoin network is the equivalent of <a href="http://www.bitcoinwatch.com/" title="Network Hashrate">over 100
+PetaFLOPs</a> (the number of computations it can perform per second).
+By comparison, this is about 10 times the speed of the world's greatest
+supercomputer, <a href="http://www.top500.org/lists/2011/11/press-release" title="Japan's K Computer Tops 10 Petaflop/s to Stay Atop TOP500 List">Japan's K computer</a>, at 10.51 PetaFLOPs. The expense
+of creating a large supercomputer outweighs any potential gains that could come
+from the ability to double spend a portion of Bitcoins.</p>
+
+<p>Because of the risk of double spending, it has become common practice in the
+Bitcoin community to wait for six confirmations (six ten-minute blocks to be
+added to the block chain after your transaction) before treating a payment as
+received. While a scammer might get lucky and reverse one or two blocks with an
+alternate chain and a great amount of computation, each additional block is
+exponentially more unlikely.</p>
+
+<h3>Regulatory Uncertainty</h3>
+
+<p>The legal classification of Bitcoin is still unclear: it could be considered a
+commodity, a currency, a financial product, or legally equivalent to World of
+Warcraft gold. It remains to be seen what licenses and financial regulations
+Bitcoin businesses will be required to obtain. The largest currency exchange
+market, MtGox, reportedly has experienced some <a href="https://bitcointalk.org/index.php?topic=52846.msg635859#msg635859">difficulties wiring
+money</a>
+because of money laundering investigations.</p>
+
+<p>Bitcoin is inherently hard to regulate as there is no central authority. Because
+transactions are semi-anonymous and accounts cannot be frozen, it could become a
+medium of choice for money laundering, tax evasion, and illicit trade. Using the
+TOR anonymizing network, any internet user with some technical savvy can access
+a service called the Silk Road, a marketplace for illegal drugs denominated in
+Bitcoin.</p>
+
+<p>In the above respects, Bitcoin has very similar characteristics to governmental
+paper currency, like US dollar bills (i.e., cash). They can both be transacted
+nearly anonymously without an easily auditable paper trail. However, Bitcoin's
+technological complexity may cause regulators to view it as a threat to the rule
+of law. The regulatory classification and legality of direct party-to-party
+business transactions are still uncertain.</p>
+
+<h3>Risk of Loss</h3>
+
+<p>Users of Bitcoin today have to ensure that they secure their digital wallets
+from both loss and theft. This can be challenging, requiring use of using secure
+encryption, password management, and information backup methods. There have been
+some high-profile cases where people made mistakes and lost hundreds of dollars'
+worth of Bitcoin. With no central authority to appeal to, these funds are truly
+unrecoverable.</p>
+
+<p>It is important for Bitcoin adopters to employ best practices and use methods
+commensurate with the potential for loss of their Bitcoin holdings.</p>
+
+<h3>Is Bitcoin "The One"?</h3>
+
+<p>The Bitcoin system is very young, barely 3 years old. While it has an engaged
+community of early adopters, many of whom have done a deep technical analysis of
+the security of the Bitcoin protocol, there may be inherent flaws in the design
+leading people to abandon the currency in favor of some other design (or to lose
+faith in the concept of a distributed anonymous currency altogether).</p>
+
+<p>Some competing digital currencies have been proposed, but with much more limited
+adoption than Bitcoin has seen. It seems likely to us, that Bitcoin, or
+something very much like it, will be a viable option for many types of
+transactions and exchanges in the online world.</p>
+
+<h2>Applications Well-suited to Bitcoin</h2>
+
+<ol>
+<li><strong>Online sales of digital goods</strong>. - Customer can receive delivery
+immediately and the merchant gets a guaranteed irrevocable payment.</li>
+<li><strong>Online donations</strong>. Payments can optionally be publicly visible to
+demonstrate social proof of support for a charitable cause.</li>
+<li><strong>Super Vault</strong>. A Bitcoin wallet can be created from a passphrase or stored
+on one or more USB-keys. Bitcoins can be deposited to the generated public
+addresses even when the wallet is offline. So there is no risk of loss through
+online hacking; money can flow in, but is impossible to flow out without
+retrieving the offline wallet from storage (or the memory of the wallet
+creator).</li>
+<li><strong><a href="http://en.wikipedia.org/wiki/Remittance">Remittances</a></strong>. - Inexpensive
+money transfer system across national boundaries. Agents could accept cash in a
+developed country, and transfer Bitcoins to an agent in the home country of a
+foreign worker, to be picked up by the family of the worker.</li>
+</ol>
+
+<h2>References and Links</h2>
+
+<ol>
+<li><a href="http://bitcoin.org/bitcoin.pdf" title="Bitcoin: A Peer-to-Peer Electronic Cash System">Bitcoin: A Peer-to-Peer Electronic Cash System</a> - by Satoshi Nakamoto (original paper)</li>
+<li><a href="http://en.wikipedia.org/wiki/Bitcoin">Bitcoin</a> on Wikipedia</li>
+<li><a href="http://www.weusecoins.com/">We Use Coins</a> - An Excellent introductory video.</li>
+<li><a href="https://bitcointalk.org/">Bitcoin Forum</a> - Online discussions of Bitcoin by early adopters and enthusiasts.</li>
+<li><a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin Wiki</a> - Technical information on the Bitcoin protocol, software, and services.</li>
+<li><a href="http://bitcoin.org/">Bitcoin.org</a> - Primary download site for The Bitcoin Client (source code)</li>
+<li><a href="http://blockchain.info/">BlockChain</a> and <a href="http://blockexplorer.com/">Block Explorer</a> - Online browsers of Bitcoin published transactions</li>
+<li><a href="https://mtgox.com/">MtGox</a> - The largest Bitcoin exchange (Dollars exchanged with Bitcoin) - live price and order book chart at <a href="http://mtgoxlive.com/orders">MtGoxLive</a>.</li>
+<li><a href="https://bitcoinica.com/trading">Bitcoinica</a> - The 2nd most popular Bitcoin trading site, offers margin and short-selling not offered on MyGox.</li>
+<li><a href="https://www.tradehill.com/">TradeHill</a> - Another popular (international) Bitcoin exchange.</li>
+<li><a href="https://strongcoin.com/">StrongCoin</a> - An easy-to-use online digital wallet.</li>
+<li><a href="https://www.instawallet.org/">InstaWallet</a> - On-demand online wallet with no account needed - creates a private URL per address.</li>
+<li><a href="https://deepbit.net/">DeepBit</a> - One of the largest mining pools for Bitcoin with a combined compute power of 3,000 Giga-hashes per second (3 x 10^12 hashes/sec)</li>
+</ol>
