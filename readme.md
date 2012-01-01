@@ -14,7 +14,7 @@ generating PDF documents.
 
 For example, to generate HTML and PDF versions type:
 
-    bin/make-pdf a-bitcoin-primer
+    bin/make-pdf.sh a-bitcoin-primer
 
   [Markdown]: http://daringfireball.net/projects/markdown/ "Markdown"
   [XHTML2PDF]: https://github.com/chrisglass/xhtml2pdf "HTML/CSS to PDF converter - Python"
