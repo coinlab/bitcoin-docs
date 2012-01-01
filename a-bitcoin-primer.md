@@ -49,7 +49,7 @@ viruses popped up which stole any Bitcoin it could find, and some services
 closed without warning, disappearing with their customers' money.
 
 As users learned better and safer practices for handling their Bitcoin, price
-volatility decreased, and the price of a Bitcoin currently hovers around $4.
+volatility decreased, and the price of a Bitcoin has climbed to over $5.
 Many new services popped up including margin trading and short selling, digital
 downloads, banking and escrow services, a World-of-Warcraft-style MMORPG where
 you can gamble on everything with Bitcoin, web hosting, domain name
@@ -120,7 +120,7 @@ transactions.
 
 The Bitcoin system is unique because it is the first digital store of value
 which can be safely and securely saved and transacted by individuals, without
-have to rely on a trusted third party. Once acquired and properly secured,
+having to rely on a trusted third party. Once acquired and properly secured,
 Bitcoins can't be taken from their owner, by a thief, a bank, or a government.
 Neither can any entity freeze any account, nor prevent the owner from performing
 (essentially free) transactions on the Bitcoin network.
@@ -138,7 +138,7 @@ chargebacks.
 Online merchants have chosen to live with a certain amount of fraudulent
 chargebacks while expending company resources on various anti-fraud detection
 measures. In an effort to minimize chargebacks, merchants typically ask their
-customers to reveal personal information about them beyond what is necessary to
+customers to reveal personal information about themselves beyond what is necessary to
 deliver their product or service, leading to a loss of personal privacy for the
 consumer.
 
@@ -173,7 +173,7 @@ raising money, and that gifts couldn't be shipped to a different address from
 the customer who paid for them (which was odd during the holiday gift-giving
 season).
 
-By publicizing her frustrating experience with support on her blog, she
+By publicizing her frustrating experience on her blog, she
 eventually got an apology from PayPal, and they unfroze her account. But there
 are many similar stories from other PayPal users who have had accounts closed or
 funds frozen. Without an audience to create a public outcry, many still haven't
@@ -202,7 +202,7 @@ significantly cut into the profits of some businesses.
 [Google Checkout](https://checkout.google.com/seller/fees.html) and [Amazon
 Checkout's](https://payments.amazon.com/sdui/sdui/business/cba#pricing) rates
 all start at 2.9% + $0.30 per transaction, decreasing to 1.9% for merchants with
-over $30,000 of transactions per month. Viable businesses with low profit
+over $30,000 of transactions per month. Otherwise viable businesses with low profit
 margins or requiring many small transactions may not be profitable due to these
 fees.
 
@@ -224,7 +224,7 @@ legal enforcement system.
 
 ### An Inflation Hedge for Long-term Savings
 
-Because the lifetime creation limited is 21M Bitcoins, it may be that they will
+Because the lifetime creation limit is 21M Bitcoins, it may be that they will
 be a good way to store long-term value as a hedge against inflation. This may be
 especially true for citizens of countries that are experiencing run-away
 inflation. If they can transfer their earnings to Bitcoins, they can be isolated
@@ -354,7 +354,7 @@ business transactions are still uncertain.
 ### Risk of Loss
 
 Users of Bitcoin today have to ensure that they secure their digital wallets
-from both loss and theft. This can be challenging, requiring use of using secure
+from both loss and theft. This can be challenging, requiring use of secure
 encryption, password management, and information backup methods. There have been
 some high-profile cases where people made mistakes and lost hundreds of dollars'
 worth of Bitcoin. With no central authority to appeal to, these funds are truly
@@ -378,7 +378,7 @@ transactions and exchanges in the online world.
 
 ## Applications Well-suited to Bitcoin
 
-1. **Online sales of digital goods**. - Customer can receive delivery
+1. **Online sales of digital goods**. Customers can receive delivery
    immediately and the merchant gets a guaranteed irrevocable payment.
 2. **Online donations**. Payments can optionally be publicly visible to
    demonstrate social proof of support for a charitable cause.
@@ -388,7 +388,7 @@ transactions and exchanges in the online world.
    online hacking; money can flow in, but is impossible to flow out without
    retrieving the offline wallet from storage (or the memory of the wallet
    creator).
-4. **[Remittances](http://en.wikipedia.org/wiki/Remittance)**. - Inexpensive
+4. **[Remittances](http://en.wikipedia.org/wiki/Remittance)**. Inexpensive
    money transfer system across national boundaries. Agents could accept cash in a
    developed country, and transfer Bitcoins to an agent in the home country of a
    foreign worker, to be picked up by the family of the worker.
@@ -403,7 +403,8 @@ transactions and exchanges in the online world.
 3. [We Use Coins](http://www.weusecoins.com/) - An Excellent introductory video.
 4. [Bitcoin Forum](https://bitcointalk.org/) - Online discussions of Bitcoin by early adopters and enthusiasts.
 5. [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page) - Technical information on the Bitcoin protocol, software, and services.
-6. [Bitcoin.org](http://bitcoin.org/) - Primary download site for The Bitcoin Client (source code)
+6. [Bitcoin.org](http://bitcoin.org/) - Primary download site for the "official" Bitcoin client
+   [(source code)][Bitcoin Client]
 7. [BlockChain](http://blockchain.info/) and [Block Explorer](http://blockexplorer.com/) - Online browsers of Bitcoin published transactions
 8. [MtGox](https://mtgox.com/) - The largest Bitcoin exchange (Dollars exchanged with Bitcoin) - live price and order book chart at [MtGoxLive](http://mtgoxlive.com/orders).
 9. [Bitcoinica](https://bitcoinica.com/trading) - The 2nd most popular Bitcoin trading site, offers margin and short-selling not offered on MyGox.
@@ -424,3 +425,4 @@ transactions and exchanges in the online world.
   [BitcoinWatch]: http://www.bitcoinwatch.com/ "Network Hashrate"
   [K Computer]: http://www.top500.org/lists/2011/11/press-release "Japan's K Computer Tops 10 Petaflop/s to Stay Atop TOP500 List"
   [Bitcoin Difficulty]: http://btcserv.net/bitcoin/history/ "Bitcoin History"
+  [Bitcoin Client]: https://github.com/bitcoin/bitcoin "Bitcoin Client Source Code"
