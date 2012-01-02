@@ -9,8 +9,12 @@
 ## Building
 
 Documents are written in [Markdown] format and designed to be easy to edit and repurpose. This
-direction contains generated HTML and PDF version as well. We use the [XHTML2PDF] converter for
+direction contains generated HTML and PDF version as well. We use the [XHTML2PDF] (aka *pisa*) converter for
 generating PDF documents.
+
+    pip install reportlab xhtml2pdf
+
+*Note: I had errors installing xhtml2pdf from pip - using the current github repo and running setup.py fixed it.*
 
 For example, to generate HTML and PDF versions type:
 
@@ -18,4 +22,3 @@ For example, to generate HTML and PDF versions type:
 
   [Markdown]: http://daringfireball.net/projects/markdown/ "Markdown"
   [XHTML2PDF]: https://github.com/chrisglass/xhtml2pdf "HTML/CSS to PDF converter - Python"
-
