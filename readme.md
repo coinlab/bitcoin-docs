@@ -9,7 +9,7 @@
 ## Building
 
 Documents are written in [Markdown] format and designed to be easy to edit and repurpose. This
-direction contains generated HTML and PDF version as well. We use the [XHTML2PDF] (aka *pisa*) converter for
+direction contains generated HTML and PDF version as well. We use the [XHTML2PDF] converter for
 generating PDF documents.
 
     pip install reportlab xhtml2pdf
