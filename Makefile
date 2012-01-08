@@ -1,13 +1,20 @@
-SOURCES = $(wildcard *.md)
+SOURCES = a-bitcoin-primer.md
 DOCS=$(SOURCES:.md=.html) $(SOURCES:.md=.pdf) $(SOURCES:.md=.epub)
+BINDIR=bin
 
 all: $(DOCS)
 
 clean:
-	rm $(DOCS)
+	rm -f $(DOCS)
 
-.md.html:
-	$BINDIR/Markdown.pl $< > $@
+%.html: %.md
+	$(BINDIR)/Markdown.pl $< > $@
 
-.md.pdf:
-	pisa --encoding=utf8 --css=default.css $<
+%.pdf: %.md
+	markdown2pdf $< --template=template.tex -o $@
+
+%.tex: %.html
+	pandoc -f html -t latex --template=template.tex $< -o $@
+
+%.epub: %.html
+	pandoc -f html -t epub --template=template.tex $< -o $@
