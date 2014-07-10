@@ -407,7 +407,7 @@ transactions and exchanges in the online world.
    [(source code)][Bitcoin Client]
 7. [BlockChain](http://blockchain.info/) and [Block Explorer](http://blockexplorer.com/) - Online browsers of Bitcoin published transactions
 8. [MtGox](https://mtgox.com/) - The largest Bitcoin exchange (Dollars exchanged with Bitcoin) - live price and order book chart at [MtGoxLive](http://mtgoxlive.com/orders).
-9. [Bitcoinica](https://bitcoinica.com/trading) - The 2nd most popular Bitcoin trading site, offers margin and short-selling not offered on MyGox.
+9. [Bitcoinica](https://bitcoinica.com/trading) - The 2nd most popular Bitcoin trading site, offers margin and short-selling not offered on MtGox.
 10. [TradeHill](https://www.tradehill.com/) - Another popular (international) Bitcoin exchange.
 10. [StrongCoin](https://strongcoin.com/) - An easy-to-use online digital wallet.
 11. [InstaWallet](https://www.instawallet.org/) - On-demand online wallet with no account needed - creates a private URL per address.
